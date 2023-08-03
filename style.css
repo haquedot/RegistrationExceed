@@ -36,6 +36,10 @@ h6 {
     background-color: rgb(224, 224, 224);
 }
 
+.nav-link:hover {
+    color: #F18234;
+}
+
 @media (max-width: 992px) {
     .logoE {
         padding-left: 0px;
