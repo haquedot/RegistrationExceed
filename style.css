@@ -1,0 +1,48 @@
+h6 {
+    color: #F18234;
+    padding-left: 2px;
+}
+
+.container-fluid {
+    /* display: flex; */
+    width: 100%;
+}
+
+.col-lg-8 {
+    display: flex;
+    justify-content: right;
+}
+
+.btnSubmit {
+    background-color: #F18234;
+    color: white;
+}
+
+.btnSubmit:hover {
+    background-color: #ce7230;
+    color: white;
+}
+
+.btn-outline-secondary {
+    color: #000958;
+}
+
+.btn-outline-secondary:hover {
+    color: #000958;
+    background-color: rgb(224, 224, 224);
+}
+
+@media (max-width: 992px) {
+    .logoE {
+        padding-left: 0px;
+    }
+    .regImage {
+        display: none;
+    }
+    .navbar {
+        display: none;
+    }
+    .navRight {
+        display: none;
+    }
+}
