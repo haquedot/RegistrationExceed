@@ -8,6 +8,10 @@ h6 {
     width: 100%;
 }
 
+.form-control {
+    border: none;
+}
+
 .col-lg-8 {
     display: flex;
     justify-content: right;
