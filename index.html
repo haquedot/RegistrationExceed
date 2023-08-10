@@ -6,15 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
     <header class="container-fluid border">
-        <div class="row">
+        <!-- <div class="row">
             <div class="col-lg-2 py-2">
-                <img src="images/logo.jpg" width="100px" alt="">
+                <a href="#home"><img src="images/logo.jpg" width="100px" alt=""></a>
             </div>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
             <div class="col-lg-6">
                 <nav class="navbar navbar-expand-sm bg-light justify-content-center">
                     <ul class="navbar-nav">
@@ -27,8 +31,15 @@
                         <li class="nav-item">
                             <a class="nav-link" href="#camps">Camps</a>
                         </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#others">Others</a>
+                        <li class="nav-item">
+                            <div class="dropdown">
+                                <button class="nav-link dropdown-toggle" href="#others" data-bs-toggle="dropdown">Others</button>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Link 1</a></li>
+                                    <li><a class="dropdown-item" href="#">Link 2</a></li>
+                                    <li><a class="dropdown-item" href="#">Link 3</a></li>
+                                </ul>
+                            </div>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#contactUs">Contact Us</a>
@@ -43,7 +54,46 @@
                 <button type="submit" class="btn btn-block btnSubmit">Free trail class</button>
 
             </div>
-        </div>
+        </div> -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="#"><img src="images/logo.jpg" width="100px" alt=""></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" align="right" width="100%" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Programs</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Camps</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Others
+                  </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">Action</a>
+                            <a class="dropdown-item" href="#">Another action</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Something else here</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact Us</a>
+                    </li>
+                </ul>
+                <form class="form-inline my-2 my-lg-0 navRight" align="right">
+                    <img class="img-fluid p-3" src="images/bag.svg" alt="">
+                    <button type="submit" class="btn btn-outline-secondary ms-2">Parent Login</button>
+                    <button type="submit" class="btn btn-block btnSubmit ms-2">Free trail class</button>
+                </form>
+            </div>
+        </nav>
     </header>
 
 
