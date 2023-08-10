@@ -1,20 +1,17 @@
 h6 {
     color: #F18234;
     padding-left: 2px;
+    font-family: Poppins;
 }
 
-
-/* .navRight {
-    display: flex;
-} */
+label {
+    font-family: Poppins;
+    font-weight: 500;
+}
 
 .container-fluid {
     /* display: flex; */
     width: 100%;
-}
-
-.form-control {
-    border: none;
 }
 
 .col-lg-8 {
@@ -41,15 +38,17 @@ h6 {
     background-color: rgb(224, 224, 224);
 }
 
-.nav-link:hover {
-    color: #F18234;
-}
-
 @media (max-width: 992px) {
     .logoE {
         padding-left: 0px;
     }
     .regImage {
+        display: none;
+    }
+    .navbar {
+        display: none;
+    }
+    .navRight {
         display: none;
     }
 }
