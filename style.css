@@ -1,9 +1,14 @@
 h6 {
     color: #F18234;
+    font-size: 22px;
     padding-left: 2px;
     font-family: Poppins;
     margin-top: 21px;
     margin-bottom: 22px;
+}
+
+.regImage img {
+    height: 120%;
 }
 
 label {
